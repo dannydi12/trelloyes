@@ -3,7 +3,8 @@ import './App.css';
 import List from './List/List';
 
 function App(props) {
-  const cardList = props.store.lists.map(list => <List key={list.id} header={list.header} cards={list.cardIds}></List>);
+  const cardList = props.store.lists.map(list => <List key={list.id} header={list.header} cards={list.cardIds.map(id => props.store.allCards[id])}></List>
+  );
 
   return (
     <main className="App">
