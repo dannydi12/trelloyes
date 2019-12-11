@@ -4,7 +4,6 @@ import './List.css';
 
 function List(props){
     const allCards = props.cards.map(card => <Card key={card.id} title={card.title} content={card.content}></Card>);
-
     return (
       <section className="List">
       <header className="List-header">
