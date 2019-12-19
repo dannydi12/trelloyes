@@ -33,8 +33,6 @@ class App extends React.Component {
       lists: newList,
       allCards
     })
-
-    
   }
 
   addRandom = (id) => {
@@ -54,7 +52,6 @@ class App extends React.Component {
       lists,
       allCards
     });
-
   }
 
   render() {
